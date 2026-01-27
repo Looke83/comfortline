@@ -20,7 +20,7 @@
 <div id="page" class="min-h-screen flex flex-col">
     <?php do_action('tailpress_header'); ?>
 
-    <header id="main-header" class="fixed w-full top-0 z-50 bg-white shadow-sm transition-all duration-300 h-24 flex items-center">
+    <header id="main-header" class="sticky w-full top-0 z-50 bg-white shadow-sm transition-all duration-300 h-24 flex items-center">
     <div class="w-full px-4 md:px-6 h-full">
         <div class="flex justify-between items-center h-full w-full">
             

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Main template file for displaying posts.
  *
@@ -8,7 +9,7 @@
 get_header(); ?>
 
 <!-- Hero Section -->
-<section class="relative w-full h-[calc(100dvh-2.5rem)] overflow-hidden">
+<section class="relative w-full h-[calc(100dvh-6rem)] overflow-hidden">
     <div class="absolute inset-0 z-0" style="background-image: url('<?php echo get_template_directory_uri(); ?>/grafika/hero.jpg'); background-size: cover; background-position: center;"></div>
 
     <div class="absolute inset-0 bg-[#001529]/60 z-10"></div>
@@ -215,12 +216,14 @@ Co obejmuje nasza usługa?
             </p>
         </div>
         <div class"">
+           <a href="<?php echo esc_url(home_url('/archiwum/')); ?>">
             <img src="<?php echo get_template_directory_uri(); ?>/grafika/vat.jpg" alt="Icon 1" class="w-80 h-60 mb-4">
             <h3 class="font-bold text-blue-950 text-lg md:text-2xl">Leasing auta</h3>
             <p class="font-normal text-base md:text-xl mt-2 opacity-90 text-red-800 text-justify">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                 commodo consequat.
             </p>
+            </a>
         </div>
         
     
