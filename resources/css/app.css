@@ -20,11 +20,65 @@
   color utility to any element that depends on these defaults.
 */
 @layer base {
-  *,
-  ::after,
-  ::before,
-  ::backdrop,
-  ::file-selector-button {
-    border-color: var(--color-zinc-200, currentColor);
-  }
+/* 1. Definicja kolorów - zadziała wszędzie */
+:root {
+    --brand-bg: #ffffff;
+    --brand-primary: #982B40;
+    --brand-secondary: #09385A;
+    --brand-szara: #E7E8E9;
+    --brand-muted: #52525b;
+    --brand-border: #e4e4e7;
+}
+
+/* 2. Automatyczna zmiana kolorów dla klasy .dark */
+.dark {
+    --brand-bg: #09090b;
+    --brand-primary: #982B40;
+    --brand-secondary: #09385A;
+    --brand-szara: #E7E8E9;
+    --brand-muted: #a1a1aa;
+    --brand-border: #27272a;
+}
+
+/* 3. Globalne nadpisanie - to sprawi, że strona zareaguje na zmienne */
+body {
+    background-color: var(--brand-bg) !important;
+    color: var(--brand-primary) !important;
+}
+
+/* 4. Klasy pomocnicze, które udają Tailwinda */
+.text-brand-primary { color: var(--brand-primary); }
+.text-brand-secondary { color: var(--brand-secondary); }
+.text-brand-muted { color: var(--brand-muted); }
+.bg-brand-bg { background-color: var(--brand-bg); }
+
+
+/* Styl przycisku */
+.theme-toggle-btn {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid var(--brand-border);
+    background-color: #ffffff;
+    color: var(--brand-bg);
+    transition: all 0.3s ease;
+}
+
+.theme-toggle-btn svg {
+    width: 1.75rem;
+    height: 1.75rem;
+}
+
+/* Logika przełączania ikon */
+.icon-sun { display: none; color: #facc15; } /* Ukryte domyślnie */
+.icon-moon { display: block; color: #6366f1; } /* Widoczne domyślnie */
+
+/* Gdy aktywny tryb ciemny */
+.dark .icon-sun { display: block; }
+.dark .icon-moon { display: none; }
+
 }

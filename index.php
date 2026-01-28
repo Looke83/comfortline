@@ -19,7 +19,7 @@ get_header(); ?>
             <p class="text-white text-sm md:text-base uppercase tracking-widest font-light">
                 BIURO RACHUNKOWE | KSIĘGOWOŚĆ
             </p>
-            <div class="w-1/5 h-[2px] bg-red-700 mt-2 mb-10"></div>
+            <div class="w-1/5 h-[2px] bg-[var(--brand-primary)] mt-2 mb-10"></div>
             <h1 class="text-white text-4xl md:text-6xl font-bold leading-tight">
                 Z Księgowością Czuj Się <br> 
                 Komfortowo
@@ -29,8 +29,8 @@ get_header(); ?>
 </section>
 
 <div class="w-full h-4 flex">
-    <div class="bg-[#001529] w-1/4 h-full"></div>
-    <div class="bg-[#800020] flex-1 h-full" style="clip-path: polygon(0 0, 100% 0, 98% 100%, 0% 100%);"></div>
+    <div class="bg-[var(--brand-secondary)] w-1/4 h-full"></div>
+    <div class="bg-[var(--brand-primary)] flex-1 h-full" style="clip-path: polygon(0 0, 100% 0, 98% 100%, 0% 100%);"></div>
 </div>
 
 <!-- pasek pod hero -->
@@ -39,37 +39,37 @@ get_header(); ?>
 </aside>
 
 <!-- About Section -->
-<section class="mx-auto px-4 md:px-36 py-24 md:py-36 text-xl md:text-2xl text-red-800 font-medium text-justify md:text-center">
+<section class="mx-auto px-4 md:px-36 py-24 md:py-36 text-xl md:text-2xl text-[var(--brand-primary)] font-medium text-justify md:text-center">
     Działamy od 2022 roku, wspierając przedsiębiorców na każdym etapie prowadzenia działalności — od rejestracji firmy, przez kompleksową 
 obsługę księgową, aż po rozliczenia podatkowe i pełną obsługę kadrowo-płacową. Nasze biuro to nie tylko liczby i paragrafy — to przede 
 wszystkim ludzie, którym zależy na Twoim spokoju i sukcesie
 </section>
 
 <!-- Oferty -->
-<section class="bg-gray-200 px-4 md:px-36 py-16 md:py-20 flex flex-col md:flex-row">
+<section class="bg-[var(--brand-szara)] px-4 md:px-36 py-16 md:py-20 flex flex-col md:flex-row">
     <div class="w-full md:w-1/2">
-        <p class="text-xl md:text-2xl text-blue-950 pt-2 md:pt-8">
+        <p class="text-xl md:text-2xl text-[var(--brand-secondary)] pt-2 md:pt-8">
             BIURO RACHUNKOWE | KSIĘGOWOŚĆ
         </p>
-        <h2 class="text-3xl md:text-6xl font-medium text-red-800 mt-2 md:mt-4">
+        <h2 class="text-3xl md:text-6xl font-medium text-[var(--brand-primary)] mt-2 md:mt-4">
             Jakie usługi oferujemy?
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-y-24 gap-x-0 mt-12 md:mt-24 md:-ml-20">
             <div class="justify-items-center ">
                 <img src="<?php echo get_template_directory_uri(); ?>/grafika/uslugi.png" alt="Icon 1" class="w-20 h-20 mb-4">
-                <h3 class="font-bold text-red-800">Rejestracja firm i spółek z o.o.</h3>
+                <h3 class="font-bold text-[var(--brand-primary)]">Rejestracja firm i spółek z o.o.</h3>
             </div>
             <div class="justify-items-center ">
                 <img src="<?php echo get_template_directory_uri(); ?>/grafika/uslugi.png" alt="Icon 1" class="w-20 h-20 mb-4">
-                <h3 class="font-bold text-red-800">Rejestracja firm i spółek z o.o.</h3>
+                <h3 class="font-bold text-[var(--brand-primary)]">Rejestracja firm i spółek z o.o.</h3>
             </div>
             <div class="justify-items-center ">
                 <img src="<?php echo get_template_directory_uri(); ?>/grafika/uslugi.png" alt="Icon 1" class="w-20 h-20 mb-4">
-                <h3 class="font-bold text-red-800">Rejestracja firm i spółek z o.o.</h3>
+                <h3 class="font-bold text-[var(--brand-primary)]">Rejestracja firm i spółek z o.o.</h3>
             </div>
             <div class="justify-items-center ">
                 <img src="<?php echo get_template_directory_uri(); ?>/grafika/uslugi.png" alt="Icon 1" class="w-20 h-20 mb-4">
-                <h3 class="font-bold text-red-800">Rejestracja firm i spółek z o.o.</h3>
+                <h3 class="font-bold text-[var(--brand-primary)]">Rejestracja firm i spółek z o.o.</h3>
             </div>
         </div>       
     </div>
@@ -79,7 +79,7 @@ wszystkim ludzie, którym zależy na Twoim spokoju i sukcesie
 </section>
 
 <!-- Zaufanie -->
-<section class="bg-red-800 px-4 md:px-36 py-16 md:py-20 flex flex-col md:flex-row">
+<section class="bg-[var(--brand-primary)] px-4 md:px-36 py-16 md:py-20 flex flex-col md:flex-row">
      <div class="w-full md:w-1/2 hidden md:block">
         <img src="<?php echo get_template_directory_uri(); ?>/grafika/vat.jpg" alt="Usługi" class="w-full h-auto mt-4 md:mt-8 px-4 md:px-12">
     </div>
@@ -101,20 +101,20 @@ Zaangażowanie – traktujemy Twoją firmę jak własną.
 </section>
 
 <!-- rejestracja firm -->
-<section class=" px-4 md:px-36 py-16 md:py-20">
-    <p class="text-xl md:text-2xl  pt-2 md:pt-8 text-blue-800">
+<section class=" px-4 md:px-36 py-16 md:py-20 bg-[var(--brand-szara)]">
+    <p class="text-xl md:text-2xl  pt-2 md:pt-8 text-[var(--brand-secondary)]">
             BIURO RACHUNKOWE | KSIĘGOWOŚĆ
     </p>
-    <h3 class="text-3xl md:text-6xl font-medium mt-8 md:mt-4 text-red-800">
+    <h3 class="text-3xl md:text-6xl font-medium mt-8 md:mt-4 text-[var(--brand-primary)]">
             Rejestracja firm i <span class="whitespace-nowrap">spółek z o.o.</span>
     </h3>
-    <p class="text-medium md:text-2xl font-light mt-4 md:mt-8">
+    <p class="text-medium md:text-2xl font-light mt-4 md:mt-8 text-[var(--brand-muted)]">
 Rozpoczęcie własnej działalności to ekscytujący krok — ale formalności potrafią przytłoczyć. Dlatego oferujemy kompleksową 
 pomoc w rejestracji firmy, tak byś mógł skupić się na tym, co najważniejsze: rozwijaniu swojego biznesu.
-    <h3 class="text-2xl md:text-4xl font-medium mt-12 md:mt-16 text-red-800">
+    <h3 class="text-2xl md:text-4xl font-medium mt-12 md:mt-16 text-[var(--brand-primary)]">
 Co oferujemy?
     </h3>
-    <p class="text-medium md:text-2xl font-light mt-2 md:mt-4">
+    <p class="text-medium md:text-2xl font-light mt-2 md:mt-4 text-[var(--brand-muted)]">
 Doradztwo w wyborze formy prawnej – jednoosobowa działalność, spółka cywilna, jawna, z o.o.? Dobierzemy najlepsze rozwiązanie 
 dla Twoich celów.
 Przygotowanie i złożenie dokumentów – zajmiemy się wnioskami do CEIDG, KRS, ZUS, US i innych instytucji.
@@ -123,10 +123,10 @@ związanie.
 Rejestracja VAT i VAT-UE – jeśli planujesz współpracę z kontrahentami zagranicznymi lub przekroczysz limity sprzedaży.
 Zakładanie konta firmowego, pieczątki, PKD – doradzimy w kwes ach praktycznych i formalnych.
     </p>
-    <h3 class="text-2xl md:text-4xl font-medium mt-12 md:mt-16 text-red-800">
+    <h3 class="text-2xl md:text-4xl font-medium mt-12 md:mt-16 text-[var(--brand-primary)]">
 Dlaczego warto?
     </h3>
-    <p class="text-medium md:text-2xl font-light mt-2 md:mt-4">    
+    <p class="text-medium md:text-2xl font-light mt-2 md:mt-4 text-[var(--brand-muted)]">    
 Oszczędność czasu i nerwów – nie musisz studiować przepisów ani martwić się o błędy.
 Bezpieczny start – unikniesz pomyłek, które mogą kosztować Cię pieniądze lub opóźnić rozpoczęcie działalności.
 Indywidualne podejście – każda firma jest inna, dlatego dopasowujemy rozwiązania do Twojej branży i planów.
@@ -135,8 +135,8 @@ Stałe wsparcie – po rejestracji możesz liczyć na naszą pomoc w prowadzeniu
 </section> 
 
 <!-- prowadzenie kompleksowej księgowości -->
-<section class=" px-4 md:px-36 py-16 md:py-20 bg-red-800">
-    <p class="text-xl md:text-2xl  pt-2 md:pt-8 text-blue-950">
+<section class=" px-4 md:px-36 py-16 md:py-20 bg-[var(--brand-primary)]">
+    <p class="text-xl md:text-2xl  pt-2 md:pt-8 text-[var(--brand-secondary)]">
             BIURO RACHUNKOWE | KSIĘGOWOŚĆ
     </p>
     <p class="text-3xl md:text-6xl font-medium mt-8 md:mt-4 text-white">
@@ -146,7 +146,7 @@ Stałe wsparcie – po rejestracji możesz liczyć na naszą pomoc w prowadzeniu
 Założenie firmy lub spółki z ograniczoną odpowiedzialnością to ważny krok w rozwoju zawodowym. Dla wielu przedsiębiorców to 
 także moment pełen formalności, wątpliwości i pytań. Nasze biuro przejmuje cały ciężar procedur, abyś mógł rozpocząć działalność 
 szybko, bezpiecznie i bez stresu.
-    <p class="text-2xl md:text-4xl font-medium mt-12 md:mt-16 text-blue-950 mb-8">
+    <p class="text-2xl md:text-4xl font-medium mt-12 md:mt-16 text-[var(--brand-secondary)] mb-8">
 Co obejmuje nasza usługa?
     </p>
     <h3 class="font-bold text-lg md:text-2xl text-white">Analiza Twoich potrzeb biznesowych</h3> 
@@ -168,70 +168,75 @@ Co obejmuje nasza usługa?
 
 <!-- sekcja na posty -->
 
-<section class=" px-4 md:px-36 py-16 md:py-20">
-    <h2 class="text-3xl md:text-6xl font-medium mt-8 md:mt-4 text-red-800 text-center">
-            Dowiedz się więcej
+<section class="px-4 md:px-36 py-16 md:py-20">
+    <h2 class="text-3xl md:text-6xl font-medium mt-8 md:mt-4 text-[var(--brand-primary)] text-center">
+        Dowiedz się więcej
     </h2>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-y-24 gap-x-16 mt-12 md:mt-24 md:-ml-20">
-    
-        <div class"">
-            <img src="<?php echo get_template_directory_uri(); ?>/grafika/vat.jpg" alt="Icon 1" class="w-80 h-60 mb-4">
-            <h3 class="font-bold  text-blue-950 text-lg md:text-2xl">Leasing auta</h3>
-            <p class="font-normal text-base md:text-xl mt-2 opacity-90 text-red-800 text-justify">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat.
-            </p>
-        </div>
-        <div class"">
-            <img src="<?php echo get_template_directory_uri(); ?>/grafika/vat.jpg" alt="Icon 1" class="w-80 h-60 mb-4">
-            <h3 class="font-bold text-blue-950 text-lg md:text-2xl">Leasing auta</h3>
-            <p class="font-normal text-base md:text-xl mt-2 opacity-90 text-red-800 text-justify">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat.
-            </p>
-        </div>
-        <div class"">
-            <img src="<?php echo get_template_directory_uri(); ?>/grafika/vat.jpg" alt="Icon 1" class="w-80 h-60 mb-4">
-            <h3 class="font-bold text-blue-950 text-lg md:text-2xl">Leasing auta</h3>
-            <p class="font-normal text-base md:text-xl mt-2 opacity-90 text-red-800 text-justify">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat.
-            </p>
-        </div>
-                <div class"">
-            <img src="<?php echo get_template_directory_uri(); ?>/grafika/vat.jpg" alt="Icon 1" class="w-80 h-60 mb-4">
-            <h3 class="font-bold text-blue-950 text-lg md:text-2xl">Leasing auta</h3>
-            <p class="font-normal text-base md:text-xl mt-2 opacity-90 text-red-800 text-justify">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat.
-            </p>
-        </div>
-        <div class"">
-            <img src="<?php echo get_template_directory_uri(); ?>/grafika/vat.jpg" alt="Icon 1" class="w-80 h-60 mb-4">
-            <h3 class="font-bold text-blue-950 text-lg md:text-2xl">Leasing auta</h3>
-            <p class="font-normal text-base md:text-xl mt-2 opacity-90 text-red-800 text-justify">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat.
-            </p>
-        </div>
-        <div class"">
-           <a href="<?php echo esc_url(home_url('/archiwum/')); ?>">
-            <img src="<?php echo get_template_directory_uri(); ?>/grafika/vat.jpg" alt="Icon 1" class="w-80 h-60 mb-4">
-            <h3 class="font-bold text-blue-950 text-lg md:text-2xl">Leasing auta</h3>
-            <p class="font-normal text-base md:text-xl mt-2 opacity-90 text-red-800 text-justify">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat.
-            </p>
-            </a>
+        
+        <?php
+        // 1. Definiujemy zapytanie o 5 ostatnich postów
+        $args = [
+            'posts_per_page' => 5,
+            'post_status' => 'publish',
+        ];
+
+        $query = new WP_Query($args);
+
+        // 2. Start pętli
+        if ($query->have_posts()):
+            while ($query->have_posts()):
+                $query->the_post(); ?>
+                
+                <div>
+                    <?php if (has_post_thumbnail()): ?>
+                        <a href="<?php the_permalink(); ?>">
+                            <?php the_post_thumbnail('medium', [
+                                'class' =>
+                                    'w-80 h-60 mb-4 object-cover shadow-md hover:hover:scale-[1.02] duration-300 transition-transform',
+                                // 'w-80 h-60 mb-4 object-cover shadow-md hover:opacity-90 transition-opacity
+                            ]); ?>
+                        </a>
+                    <?php else: ?>
+                        <div class="w-80 h-60 mb-4 flex items-center justify-center text-gray-400 text-xs italic">Brak zdjęcia</div>
+                    <?php endif; ?>
+
+                    <h3 class="font-bold text-[var(--brand-secondary)] text-lg md:text-2xl">
+                        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                    </h3>
+                    
+                    <p class="font-normal text-base md:text-xl mt-2 opacity-90 text-[var(--brand-primary)] text-justify">
+                        <?php echo wp_trim_words(
+                            get_the_excerpt(),
+                            20,
+                            '...',
+                        ); ?>
+                    </p>
+                </div>
+
+            <?php
+            endwhile;
+            wp_reset_postdata(); // Bardzo ważne po WP_Query!
+        endif;
+        ?>
+
+        <div class="group">
+    <a href="<?php echo esc_url(
+        home_url('/archiwum/'),
+    ); ?>" class="block !no-underline">
+        <div class="w-80 h-60 mb-4 bg-[var(--brand-primary)] rounded-lg flex items-center justify-center transition-transform group-hover:scale-[1.02] duration-300">
+            <span class="text-white text-8xl font-bold">?</span>
         </div>
         
-    
+        <h3 class="font-bold text-[var(--brand-secondary)] text-lg md:text-2xl group-hover:text-[var(--brand-primary)] transition-colors">
+            ZOBACZ WSZYSTKIE PORADY
+        </h3>
+        
+    </a>
+</div>
 
     </div>
-
-
-
 </section>
 
 
